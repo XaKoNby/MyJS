@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="libs.js"></script>
+ 
+</head>
+<body>
+
+  <script>
+
+function range(start, end, step) {
+  if (step == null) step = 1;
+  var array = [];
+
+  if (step > 0) {
+    for (var a = start; a <= end; a += step)
+      array.push(a);
+  } else {
+    for (var a = start; a >= end; a += step)
+      array.push(a);
+  }
+  return array;
+}
+
+function sum(array) {
+  var total = 0;
+  for (var a = 0; a < array.length; a++)
+    total += array[a];
+  return total;
+}
+
+  </script>
+
+   <script src="test.js"></script>
+</body>
+</html>
